@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>意图 Intention · IMPACT 公开体验区</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet"><style>*{box-sizing:border-box}html,body{margin:0}
+:root{--ink:#2E2B24;--muted:#6E685B;--green:#4f7a63;--green-deep:#2f4a3c;--gold:#B0894B;--accent:#4f7a63}
+body{font-family:"DM Sans","Noto Sans SC",sans-serif;color:var(--ink);line-height:1.72;-webkit-font-smoothing:antialiased;
+background:radial-gradient(120% 70% at 6% 0%, rgba(79,122,99,.18), rgba(79,122,99,0) 46%),radial-gradient(120% 70% at 100% 3%, rgba(79,122,99,.13), rgba(79,122,99,0) 42%),linear-gradient(180deg,#F4EFE1,#F1EBDB 60%,#EFE7D4);background-attachment:fixed;min-height:100vh}
+.wrap{max-width:768px;margin:0 auto;padding:30px 22px 60px}
+.top{display:flex;align-items:baseline;gap:9px;margin-bottom:28px}
+.wm{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:22px;letter-spacing:.16em;color:var(--green-deep)}
+.wm-sub{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:15px}
+.eyebrow{font-family:"Cormorant Garamond",serif;font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ttl{font-family:"Noto Serif SC",serif;font-weight:700;font-size:clamp(26px,5vw,37px);color:var(--green-deep);margin:6px 0 6px;line-height:1.22}
+.ttl-en{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;color:var(--green);font-size:.58em;margin-left:12px;white-space:nowrap}
+.lead{font-size:18px;margin:14px 0 4px;font-weight:500}
+.jin{font-family:"Noto Serif SC",serif;font-size:17.5px;color:var(--green-deep);border-left:3px solid var(--accent);padding:4px 0 4px 16px;margin:20px 0}
+.card{background:radial-gradient(150% 140% at 50% 0%, rgba(251,247,236,.92), rgba(251,247,236,.66) 60%, rgba(251,247,236,.5));border:1px solid rgba(73,126,107,.2);border-radius:20px;padding:22px 24px;margin:18px 0}
+.h2{font-family:"Noto Serif SC",serif;font-weight:600;font-size:20px;color:var(--green-deep);margin:0 0 10px}
+.h2 .en{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;color:var(--green);font-size:.78em;margin-left:8px}
+p{margin:10px 0}.muted{color:var(--muted)}
+.muted2{color:var(--muted);font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14px}
+.grid{display:grid;gap:14px}
+@media(min-width:640px){.grid-3{grid-template-columns:1fr 1fr 1fr}.grid-2{grid-template-columns:1fr 1fr}}
+.dim{background:rgba(251,247,236,.55);border:1px solid rgba(73,126,107,.18);border-radius:15px;padding:17px}
+.dim .k{font-family:"Cormorant Garamond",serif;font-weight:600;letter-spacing:.03em;color:var(--accent);font-size:15px}
+.dim .kz{font-family:"Noto Serif SC",serif;font-weight:600;color:var(--green-deep);font-size:17px;margin:2px 0 7px}
+.dim p{font-size:14.5px;color:var(--muted);margin:0}
+ol.q,ul.q{margin:8px 0 0;padding-left:20px}ol.q li,ul.q li{margin:7px 0}
+ul.q{list-style:none;padding-left:2px}ul.q li{position:relative;padding-left:16px;color:var(--muted);font-size:14px}
+ul.q li::before{content:"·";position:absolute;left:2px;color:var(--accent);font-weight:700}
+.fig{margin:22px 0;text-align:center}
+.fig img{max-width:100%;border-radius:16px;box-shadow:0 18px 46px -28px rgba(33,48,42,.55)}
+.cred{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--muted);font-size:13px;margin-top:9px}
+.read{display:flex;gap:12px;align-items:flex-start;margin:13px 0}
+.read .rn{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--accent);min-width:16px;font-size:17px}
+.tag{display:inline-block;font-size:11.5px;letter-spacing:.03em;color:var(--green);border:1px solid rgba(73,126,107,.3);border-radius:20px;padding:1px 9px;margin-left:4px;white-space:nowrap}
+.lens{border-radius:18px;padding:20px;border:1px solid rgba(73,126,107,.2)}
+.lens p{font-size:14.5px;margin:8px 0}
+.soon{text-align:center;color:var(--muted);font-style:italic;margin:36px 0 24px;font-size:16px}
+.foot{margin-top:46px;padding-top:22px;border-top:1px solid rgba(73,126,107,.18);text-align:center;font-family:"Cormorant Garamond",serif;color:var(--green);font-size:14px;letter-spacing:.04em}
+.ip{margin-top:16px;font-family:"DM Sans","Noto Sans SC",sans-serif;font-style:normal;font-size:11px;line-height:1.75;color:var(--muted);opacity:.82;letter-spacing:.01em}
+.ip .en{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:11.5px}
+.ip .site{letter-spacing:.08em;color:var(--green)}
+strong{color:var(--ink)}
+.wip{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:13.5px;letter-spacing:.06em;border:1px solid rgba(176,137,75,.34);border-radius:30px;padding:6px 16px;display:table;margin:2px auto 20px}
+.ph{color:var(--muted);font-style:italic;opacity:.9}
+.toolgo{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;letter-spacing:.04em;color:var(--gold);text-decoration:none;margin-top:6px;border-bottom:1px solid rgba(176,137,75,.4);padding-bottom:2px}
+.toolgo:hover{color:var(--green-deep)}
+.sty{background:rgba(251,247,236,.55);border:1px solid rgba(73,126,107,.18);border-radius:15px;padding:16px 17px}
+.sty .nm{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:17px;color:var(--green-deep)}
+.sty .nm b{font-family:"Noto Serif SC",serif;font-weight:600}
+.sty .ty{font-size:12px;color:var(--gold);letter-spacing:.05em;margin:1px 0 7px}
+.sty .ds{font-size:14px;margin:0 0 8px}
+.sty .ds .en{color:var(--muted);font-style:italic;font-family:"Cormorant Garamond",serif;display:block;font-size:13px;margin-top:3px}
+.sty .sb{font-size:13px;color:var(--muted);margin:4px 0 0}
+.sty .sb b{color:var(--green);font-family:"Noto Serif SC",serif}
+.wbrow{margin:11px 0}
+.wbrow .wt{font-family:"Noto Serif SC",serif;font-weight:600;color:var(--green-deep);font-size:14.5px}
+.wbrow .wt .ar{color:var(--gold);font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;margin-left:6px}
+.wbrow .wx{color:var(--muted);font-size:13.5px;margin-top:3px;line-height:1.9;display:block}
+:root{--accent:#4f7a63}
+/* ---- open preview additions ---- */
+body.backpad .wrap{padding-top:64px}
+.oppos{font-family:"Noto Serif SC",serif;font-size:12.5px;color:var(--gold);letter-spacing:.05em;border:1px solid rgba(176,137,75,.34);border-radius:30px;padding:5px 15px;display:table;margin:0 0 20px}
+.cta{background:radial-gradient(150% 140% at 50% 0%, rgba(176,137,75,.17), rgba(251,247,236,.74) 62%, rgba(251,247,236,.56));border:1px solid rgba(176,137,75,.42);border-radius:20px;padding:24px 22px;margin:30px 0 0}
+.cta .ct{font-family:"Noto Serif SC",serif;font-weight:700;font-size:19.5px;color:var(--green-deep);margin:0 0 9px;line-height:1.45}
+.cta .cd{font-size:14.5px;color:var(--muted);margin:0 0 16px;line-height:1.8}
+.cta .cl{margin:12px 0 0}
+.cta .cl .cn{font-family:"Noto Serif SC",serif;color:var(--green-deep);font-weight:600;font-size:14px;display:block;margin-bottom:3px}
+.cta a.url{display:inline-block;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(176,137,75,.5);word-break:break-all;font-size:14.5px;letter-spacing:.01em;padding-bottom:2px;line-height:1.5}
+.cta a.url:active{color:var(--green-deep)}
+.declare{margin-top:18px;font-family:"DM Sans","Noto Sans SC",sans-serif;font-style:normal;font-size:12px;line-height:1.85;color:var(--muted);letter-spacing:.01em}
+.declare .en{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:12.5px;display:block;margin-top:2px}
+.ocard{display:block;text-decoration:none;color:inherit;background:radial-gradient(150% 140% at 50% 0%, rgba(251,247,236,.92), rgba(251,247,236,.66) 60%, rgba(251,247,236,.5));border:1px solid rgba(73,126,107,.22);border-radius:20px;padding:22px 22px;margin:16px 0}
+.ocard:active{border-color:rgba(73,126,107,.45)}
+.ocard .onm{font-family:"Noto Serif SC",serif;font-weight:600;font-size:19px;color:var(--green-deep);line-height:1.35}
+.ocard .oen{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--green);font-size:14.5px;margin:3px 0 9px}
+.ocard .od{font-size:14.5px;color:var(--muted);margin:0;line-height:1.8}
+.ocard .otag{display:inline-block;margin-top:13px;font-size:12px;letter-spacing:.05em;color:var(--gold);border:1px solid rgba(176,137,75,.4);border-radius:20px;padding:3px 12px}
+.ocard .ogo{display:block;margin-top:11px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:13.5px;color:var(--gold);letter-spacing:.04em}
+</style></head><body class="backpad">
+<a href="../" data-portal-back style="position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:rgba(250,248,243,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(74,90,64,.28);color:#3a5a40;font:600 14px/1 -apple-system,'Noto Sans SC',system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 10px rgba(60,70,50,.12)">← 返回体验区</a><div class="wrap"><header class="top"><span class="wm">IMPACT</span><span class="wm-sub">Open Preview · 公开体验区</span></header><div class="oppos">这是 12 个主题中的第 2 个 · Intention 意图</div><div class="eyebrow">Season 1 · 内在觉醒 · Lead from Within</div><h1 class="ttl">意图<span class="ttl-en">Intention</span></h1><p class="muted2" style="text-align:center;margin:0 0 14px">竹林 · 光与影 · Bamboo Grove: Light &amp; Shadow</p><p class="lead">真正的意图，不只是决定要实现什么，而是选择以怎样的能量与状态前行。</p><div class="jin">意图，不是你想做什么、想拥有什么——而是你选择成为的那束能量。<br><span class="muted2">Intention isn’t what you want to do or have — it’s the energy you choose to be.</span></div><div class="h2" style="margin-top:24px">核心模型 · 光与影 <span class="en">the light &amp; shadow model</span></div><p class="muted">意图是一束光。它照亮你聚焦的，也让其余的暂时隐身。你能看见什么、又会忽略什么，都由它决定。</p><div class="grid grid-3" style="margin-top:14px"><div class="dim"><div class="k">🔆 Light</div><div class="kz">照亮</div><p>你预设要看的，大脑就为你点亮——意图决定了你能“看见”什么。</p></div><div class="dim"><div class="k">🌑 Shadow</div><div class="kz">隐身</div><p>那些被你压抑、不敢拥有的能量，退到光照不到的地方——意图也决定了你“忽略”什么。</p></div><div class="dim"><div class="k">☯ Integration</div><div class="kz">合一</div><p>当光与影都被你看见，意图就从“反应”变成了“选择”。</p></div></div><div class="jin" style="margin-top:18px">没有觉察的意图，只是习惯的延续。<br><span class="muted2">Intention without awareness is only habit repeating itself.</span></div><div class="h2" style="margin-top:26px">关键框架 <span class="en">frameworks &amp; distinctions</span></div><div class="card"><div class="h2">① 意图 ≠ 目标 <span class="en">intention vs. goal</span></div><div class="grid grid-2" style="margin-top:6px"><div class="dim"><div class="kz">设定目标 · Goal</div><p>关于你要“做到 / 拥有”什么——指向<strong>结果</strong>。未来时、向外、可达成。<span class="muted2" style="display:block;margin-top:4px">what you want to do or have</span></p></div><div class="dim"><div class="kz">设定意图 · Intention</div><p>关于你选择“以怎样的能量存在”——指向<strong>状态</strong>。当下、向内、可活出。<span class="muted2" style="display:block;margin-top:4px">the energy you choose to be</span></p></div></div><p class="muted" style="margin-top:10px">目标回答“我要去哪”，意图回答“我以怎样的我前行”。两者并不冲突——意图，是目标的底色。</p></div><div class="card"><div class="h2">② 阴影 · 你讨厌的，往往是你压抑的 <span class="en">the shadow</span></div><p>你“讨厌”别人的，不等于你的缺点；它常常是——你被教导去压抑、于是不敢让自己拥有的那份能量。</p><ul class="q" style="margin-top:8px"><li>你讨厌别人炫耀 → 你被教“谦虚才是美德”，于是不敢表达自豪。</li><li>你讨厌别人控制 → 你被训练“要温顺配合”，于是压抑了主导欲。</li><li>你讨厌别人圆滑 → 你怕被看作不真诚，于是拒绝了灵活应变。</li></ul><p class="muted" style="margin-top:10px">看见阴影，不是为了批判、改掉、修正；而是为了<strong>收回</strong>——那原本也是你的一部分。</p><div class="jin" style="margin:14px 0 2px">阴影不是黑暗，而是尚未被光照见的力量。<br><span class="muted2">The shadow isn’t darkness — it’s the light you haven’t yet let yourself use.</span></div></div><div class="card"><div class="h2">③ 两种意图错位 <span class="en">two misalignments · roots &amp; leaves</span></div><p class="muted">沿着「身份 · 根与叶」继续看：当意图与真实自我错位，常落在两种情形里。</p><div class="grid grid-2" style="margin-top:8px"><div class="dim"><div class="kz">根知方向，叶未长出</div><p>意图被恐惧、怀疑、完美主义裹住，困在“我还不够好”的石缝里。<br><b style="color:var(--green)">允许 Allow</b> — 松土，让能量上行；从抗拒走向清晰。</p></div><div class="dim"><div class="kz">叶在生长，根未对齐</div><p>行动是外驱的，常被结果、身份、他人期待绑架。<br><b style="color:var(--green)">校准 Realign</b> — 从“我必须表现好” → “我愿意以真实存在”。</p></div></div><p class="muted" style="margin-top:10px">当光与影都被整合，根才真正扎进土——意图便不再是“要去成为谁”，而是你选择<strong>以怎样的存在</strong>面对世界。</p></div><div class="card"><div class="h2">三个问题 <span class="en">reflections</span></div><ol class="q"><li>我现在的行动，更多是被结果与他人期待驱动，还是从我选择的能量出发？</li><li>别人身上最让我不舒服的那个特质，照见了我压抑的哪一份能量？</li><li>如果今天我不问“我要做成什么”，而问“我想以怎样的存在前行”，我会做出哪一个不同的选择？</li></ol></div><div class="card" style="border-color:rgba(176,137,75,.4)"><div class="h2">工具 · 练习 <span class="en">light &amp; shadow scan</span></div><p class="muted">一个互动小练习「光与影 Scan」：先<strong>照影</strong>——认出别人身上最触动你的特质；再<strong>收光</strong>——看见它背后被你压抑、其实也渴望拥有的能量；最后<strong>择能</strong>——选择你今天想带着前行的那束能量。</p><a class="toolgo" href="scan/">去做「光与影 Scan」→</a></div><div class="h2" style="margin-top:24px">精选延伸阅读 <span class="en">go deeper</span></div><div class="card"><div class="read"><span class="rn">1</span><div><strong>Carl Jung</strong> · The Shadow<br><span class="muted">理论根基：我们否认的部分不会消失，只会退入无意识，再以“投射”回到生活里。</span></div></div><div class="read"><span class="rn">2</span><div><strong>Debbie Ford</strong> · The Dark Side of the Light Chasers<br><span class="muted">收回阴影：你在别人身上厌恶的，正是你尚未拥抱的自己——“其实我也渴望……”。</span></div></div><div class="read"><span class="rn">3</span><div><strong>Chabris &amp; Simons</strong> · The Invisible Gorilla<br><span class="muted">选择性注意：意图决定注意力，我们只看见自己决定去看的世界。</span></div></div><div class="read"><span class="rn">4</span><div><strong>Wayne Dyer</strong> · The Power of Intention<br><span class="muted">意图作为“能量与存在”，而非待办清单上的又一个目标。</span></div></div></div><div class="jin" style="margin-top:22px">🔆 照影——我被什么触动？　🌑 收光——我压抑了哪份能量？　☯ 择能——我选择以怎样的存在前行？</div><div class="jin">拥抱阴影，是找回自己；允许他人，是放过自己。<br><span class="muted2">Embrace your shadow to find yourself; allow others’, to set yourself free.</span></div><div class="cta">
+<div class="ct">想看完整的 12 个主题？</div>
+<p class="cd">填一份 5 分钟问卷，解锁完整学习门户 + 60 分钟一对一深度访谈资格。</p>
+<div class="cl"><span class="cn">问卷链接</span><a class="url" href="https://tally.so/r/44R8Rd" target="_blank" rel="noopener">https://tally.so/r/44R8Rd</a></div>
+<div class="cl"><span class="cn">8月21–22 免费公开课报名</span><a class="url" href="https://tally.so/r/Y5XZj5" target="_blank" rel="noopener">https://tally.so/r/Y5XZj5</a></div>
+</div><footer class="foot">IMPACT Leadership Accelerator · 公开体验区<br><span class="muted2">— 你随时可以回来。 You can always come back. —</span><div class="declare">这里是 IMPACT 学习门户的公开体验区 · 完整门户（12 个主题 + IMPACTor AI 教练）为学员专属<span class="en">This is the open preview of the IMPACT Learning Portal. The full portal is reserved for participants.</span></div><div class="ip">© 2025–2026 LifeMaster · Sherry Zhang｜版权所有 · All rights reserved<br>IMPACT™、IMPACTor™ 及本站所含框架、模型与练习，均为 LifeMaster 专有知识产权；未经书面许可，请勿复制、改编或用于商业用途。<br><span class="en">The IMPACT™ &amp; IMPACTor™ frameworks, models, and exercises herein are proprietary to LifeMaster — no reproduction, adaptation, or commercial use without written permission.</span><br><span class="site">LifeMaster.coach</span></div></footer></div></body></html>

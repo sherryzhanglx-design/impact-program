@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>十二句自测 · IMPACT 公开体验区</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet"><style>*{box-sizing:border-box}html,body{margin:0}
+:root{--ink:#2E2B24;--muted:#6E685B;--green:#4f7a63;--green-deep:#2f4a3c;--gold:#B0894B;--accent:#4f7a63}
+body{font-family:"DM Sans","Noto Sans SC",sans-serif;color:var(--ink);line-height:1.72;-webkit-font-smoothing:antialiased;
+background:radial-gradient(120% 70% at 6% 0%, rgba(79,122,99,.18), rgba(79,122,99,0) 46%),radial-gradient(120% 70% at 100% 3%, rgba(79,122,99,.13), rgba(79,122,99,0) 42%),linear-gradient(180deg,#F4EFE1,#F1EBDB 60%,#EFE7D4);background-attachment:fixed;min-height:100vh}
+.wrap{max-width:768px;margin:0 auto;padding:30px 22px 60px}
+.top{display:flex;align-items:baseline;gap:9px;margin-bottom:28px}
+.wm{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:22px;letter-spacing:.16em;color:var(--green-deep)}
+.wm-sub{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:15px}
+.eyebrow{font-family:"Cormorant Garamond",serif;font-size:13.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ttl{font-family:"Noto Serif SC",serif;font-weight:700;font-size:clamp(26px,5vw,37px);color:var(--green-deep);margin:6px 0 6px;line-height:1.22}
+.ttl-en{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;color:var(--green);font-size:.58em;margin-left:12px;white-space:nowrap}
+.lead{font-size:18px;margin:14px 0 4px;font-weight:500}
+.jin{font-family:"Noto Serif SC",serif;font-size:17.5px;color:var(--green-deep);border-left:3px solid var(--accent);padding:4px 0 4px 16px;margin:20px 0}
+.card{background:radial-gradient(150% 140% at 50% 0%, rgba(251,247,236,.92), rgba(251,247,236,.66) 60%, rgba(251,247,236,.5));border:1px solid rgba(73,126,107,.2);border-radius:20px;padding:22px 24px;margin:18px 0}
+.h2{font-family:"Noto Serif SC",serif;font-weight:600;font-size:20px;color:var(--green-deep);margin:0 0 10px}
+.h2 .en{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;color:var(--green);font-size:.78em;margin-left:8px}
+p{margin:10px 0}.muted{color:var(--muted)}
+.muted2{color:var(--muted);font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14px}
+.grid{display:grid;gap:14px}
+@media(min-width:640px){.grid-3{grid-template-columns:1fr 1fr 1fr}.grid-2{grid-template-columns:1fr 1fr}}
+.dim{background:rgba(251,247,236,.55);border:1px solid rgba(73,126,107,.18);border-radius:15px;padding:17px}
+.dim .k{font-family:"Cormorant Garamond",serif;font-weight:600;letter-spacing:.03em;color:var(--accent);font-size:15px}
+.dim .kz{font-family:"Noto Serif SC",serif;font-weight:600;color:var(--green-deep);font-size:17px;margin:2px 0 7px}
+.dim p{font-size:14.5px;color:var(--muted);margin:0}
+ol.q,ul.q{margin:8px 0 0;padding-left:20px}ol.q li,ul.q li{margin:7px 0}
+ul.q{list-style:none;padding-left:2px}ul.q li{position:relative;padding-left:16px;color:var(--muted);font-size:14px}
+ul.q li::before{content:"·";position:absolute;left:2px;color:var(--accent);font-weight:700}
+.fig{margin:22px 0;text-align:center}
+.fig img{max-width:100%;border-radius:16px;box-shadow:0 18px 46px -28px rgba(33,48,42,.55)}
+.cred{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--muted);font-size:13px;margin-top:9px}
+.read{display:flex;gap:12px;align-items:flex-start;margin:13px 0}
+.read .rn{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--accent);min-width:16px;font-size:17px}
+.tag{display:inline-block;font-size:11.5px;letter-spacing:.03em;color:var(--green);border:1px solid rgba(73,126,107,.3);border-radius:20px;padding:1px 9px;margin-left:4px;white-space:nowrap}
+.lens{border-radius:18px;padding:20px;border:1px solid rgba(73,126,107,.2)}
+.lens p{font-size:14.5px;margin:8px 0}
+.soon{text-align:center;color:var(--muted);font-style:italic;margin:36px 0 24px;font-size:16px}
+.foot{margin-top:46px;padding-top:22px;border-top:1px solid rgba(73,126,107,.18);text-align:center;font-family:"Cormorant Garamond",serif;color:var(--green);font-size:14px;letter-spacing:.04em}
+.ip{margin-top:16px;font-family:"DM Sans","Noto Sans SC",sans-serif;font-style:normal;font-size:11px;line-height:1.75;color:var(--muted);opacity:.82;letter-spacing:.01em}
+.ip .en{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:11.5px}
+.ip .site{letter-spacing:.08em;color:var(--green)}
+strong{color:var(--ink)}
+.wip{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:13.5px;letter-spacing:.06em;border:1px solid rgba(176,137,75,.34);border-radius:30px;padding:6px 16px;display:table;margin:2px auto 20px}
+.ph{color:var(--muted);font-style:italic;opacity:.9}
+.toolgo{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;letter-spacing:.04em;color:var(--gold);text-decoration:none;margin-top:6px;border-bottom:1px solid rgba(176,137,75,.4);padding-bottom:2px}
+.toolgo:hover{color:var(--green-deep)}
+.sty{background:rgba(251,247,236,.55);border:1px solid rgba(73,126,107,.18);border-radius:15px;padding:16px 17px}
+.sty .nm{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:17px;color:var(--green-deep)}
+.sty .nm b{font-family:"Noto Serif SC",serif;font-weight:600}
+.sty .ty{font-size:12px;color:var(--gold);letter-spacing:.05em;margin:1px 0 7px}
+.sty .ds{font-size:14px;margin:0 0 8px}
+.sty .ds .en{color:var(--muted);font-style:italic;font-family:"Cormorant Garamond",serif;display:block;font-size:13px;margin-top:3px}
+.sty .sb{font-size:13px;color:var(--muted);margin:4px 0 0}
+.sty .sb b{color:var(--green);font-family:"Noto Serif SC",serif}
+.wbrow{margin:11px 0}
+.wbrow .wt{font-family:"Noto Serif SC",serif;font-weight:600;color:var(--green-deep);font-size:14.5px}
+.wbrow .wt .ar{color:var(--gold);font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;margin-left:6px}
+.wbrow .wx{color:var(--muted);font-size:13.5px;margin-top:3px;line-height:1.9;display:block}
+:root{--accent:#4f7a63}
+/* ---- open preview additions ---- */
+body.backpad .wrap{padding-top:64px}
+.oppos{font-family:"Noto Serif SC",serif;font-size:12.5px;color:var(--gold);letter-spacing:.05em;border:1px solid rgba(176,137,75,.34);border-radius:30px;padding:5px 15px;display:table;margin:0 0 20px}
+.cta{background:radial-gradient(150% 140% at 50% 0%, rgba(176,137,75,.17), rgba(251,247,236,.74) 62%, rgba(251,247,236,.56));border:1px solid rgba(176,137,75,.42);border-radius:20px;padding:24px 22px;margin:30px 0 0}
+.cta .ct{font-family:"Noto Serif SC",serif;font-weight:700;font-size:19.5px;color:var(--green-deep);margin:0 0 9px;line-height:1.45}
+.cta .cd{font-size:14.5px;color:var(--muted);margin:0 0 16px;line-height:1.8}
+.cta .cl{margin:12px 0 0}
+.cta .cl .cn{font-family:"Noto Serif SC",serif;color:var(--green-deep);font-weight:600;font-size:14px;display:block;margin-bottom:3px}
+.cta a.url{display:inline-block;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(176,137,75,.5);word-break:break-all;font-size:14.5px;letter-spacing:.01em;padding-bottom:2px;line-height:1.5}
+.cta a.url:active{color:var(--green-deep)}
+.declare{margin-top:18px;font-family:"DM Sans","Noto Sans SC",sans-serif;font-style:normal;font-size:12px;line-height:1.85;color:var(--muted);letter-spacing:.01em}
+.declare .en{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:12.5px;display:block;margin-top:2px}
+.ocard{display:block;text-decoration:none;color:inherit;background:radial-gradient(150% 140% at 50% 0%, rgba(251,247,236,.92), rgba(251,247,236,.66) 60%, rgba(251,247,236,.5));border:1px solid rgba(73,126,107,.22);border-radius:20px;padding:22px 22px;margin:16px 0}
+.ocard:active{border-color:rgba(73,126,107,.45)}
+.ocard .onm{font-family:"Noto Serif SC",serif;font-weight:600;font-size:19px;color:var(--green-deep);line-height:1.35}
+.ocard .oen{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--green);font-size:14.5px;margin:3px 0 9px}
+.ocard .od{font-size:14.5px;color:var(--muted);margin:0;line-height:1.8}
+.ocard .otag{display:inline-block;margin-top:13px;font-size:12px;letter-spacing:.05em;color:var(--gold);border:1px solid rgba(176,137,75,.4);border-radius:20px;padding:3px 12px}
+.ocard .ogo{display:block;margin-top:11px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:13.5px;color:var(--gold);letter-spacing:.04em}
+
+/* ---- 12-sentence self-check ---- */
+.screen{display:none}
+.screen.on{display:block}
+.qwrap{padding:6px 0 4px}
+.prog{height:3px;background:rgba(73,126,107,.15);border-radius:3px;overflow:hidden;margin:0 0 22px}
+.prog i{display:block;height:100%;width:0;background:var(--green);border-radius:3px;transition:width .25s ease}
+.qn{font-family:"Cormorant Garamond",serif;font-style:italic;color:var(--gold);font-size:14.5px;letter-spacing:.1em;font-variant-numeric:lining-nums;font-feature-settings:"lnum"}
+.qtext{font-family:"Noto Serif SC",serif;font-weight:600;font-size:clamp(21px,5.6vw,29px);line-height:1.6;color:var(--green-deep);margin:16px 0 30px}
+.scale{display:flex;gap:8px}
+.sbtn{flex:1;-webkit-appearance:none;appearance:none;background:rgba(251,247,236,.66);border:1px solid rgba(73,126,107,.28);border-radius:14px;padding:18px 0;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:23px;color:var(--green-deep);cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation;font-variant-numeric:lining-nums;font-feature-settings:"lnum"}
+.sbtn:active,.sbtn.tap{background:var(--green);border-color:var(--green);color:#fff}
+.slab{display:flex;gap:8px;margin-top:9px}
+.slab span{flex:1;text-align:center;font-size:11.5px;line-height:1.4;color:var(--muted)}
+.qback{display:inline-block;margin-top:26px;font-size:13.5px;color:var(--muted);background:none;border:none;padding:6px 0;font-family:inherit;cursor:pointer}
+.dimrow{margin:16px 0;padding:13px 15px;border:1px solid transparent;border-radius:14px}
+.dimrow.low{background:rgba(176,137,75,.09);border-color:rgba(176,137,75,.34)}
+.dimhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.dimname{font-family:"Noto Serif SC",serif;font-weight:600;font-size:16.5px;color:var(--green-deep)}
+.dimname .en{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;font-size:13.5px;color:var(--green);margin-left:6px}
+.dimscore{font-family:"Cormorant Garamond",serif;font-size:16px;color:var(--muted);white-space:nowrap;font-variant-numeric:lining-nums;font-feature-settings:"lnum"}
+.track{height:11px;background:rgba(73,126,107,.13);border-radius:8px;overflow:hidden;margin:9px 0 7px}
+.track i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#7ba48d,#4f7a63)}
+.dimrow.low .track i{background:linear-gradient(90deg,#d4b276,#B0894B)}
+.dimdesc{font-size:13.5px;color:var(--muted);margin:0;line-height:1.75}
+.lowline{font-family:"Noto Serif SC",serif;font-size:16px;color:var(--green-deep);line-height:1.75;margin:22px 0 0}
+.lowline .ld{display:block;color:var(--gold);font-size:14.5px;letter-spacing:.02em;margin-bottom:4px}
+.shot{font-size:13px;color:var(--muted);text-align:center;margin:22px 0 0;font-style:italic}
+.restart{display:block;margin:26px auto 0;background:none;border:1px solid rgba(73,126,107,.3);border-radius:24px;padding:10px 22px;font-family:inherit;font-size:13.5px;color:var(--green-deep);cursor:pointer}
+</style></head><body class="backpad"><a href="../" style="position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:rgba(250,248,243,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(74,90,64,.28);color:#3a5a40;font:600 14px/1 -apple-system,'Noto Sans SC',system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 10px rgba(60,70,50,.12)">← 返回体验区</a><div class="wrap"><header class="top"><span class="wm">IMPACT</span><span class="wm-sub">Open Preview · 公开体验区</span></header><section class="screen on" id="s-intro"><div class="eyebrow">Open Preview · 2 min</div><h1 class="ttl">十二句话，照一照现在的自己<span class="ttl-en">Twelve Sentences</span></h1><p class="lead">不用想太久，第一反应最准</p><div class="jin">十二句话，每句打一个分。做完你会看到六个维度的分布。<br><span class="muted2">Twelve sentences, one score each. No account, no storage — everything stays in this page.</span></div><p class="muted" style="font-size:13.5px">全程在本页计算，不需要登录，也不会保存你的任何答案。</p><button class="btn" id="go">开始 →</button></section><section class="screen" id="s-q"><div class="qwrap"><div class="prog"><i id="pbar"></i></div><div class="qn" id="qn"></div><div class="qtext" id="qt"></div><div class="scale"><button class="sbtn" data-v="1">1</button><button class="sbtn" data-v="2">2</button><button class="sbtn" data-v="3">3</button><button class="sbtn" data-v="4">4</button><button class="sbtn" data-v="5">5</button></div><div class="slab"><span>完全不像我</span><span></span><span></span><span></span><span>就是我</span></div><button class="qback" id="qback">← 上一题</button></div></section><section class="screen" id="s-r"><div class="eyebrow">Your Distribution</div><h1 class="ttl">你的六个维度<span class="ttl-en">Six Dimensions</span></h1><p class="muted" style="font-size:14.5px">每个维度 2–10 分。分数不是评判，只是一张分布图。</p><div id="bars"></div><div class="lowline"><span class="ld" id="lowdims"></span>你的力气，可能一直没用在这里。怎么解？两条路——</div><div class="cta">
+<div class="ct">想看完整的 12 个主题？</div>
+<p class="cd">填一份 5 分钟问卷，解锁完整学习门户 + 60 分钟一对一深度访谈资格。</p>
+<div class="cl"><span class="cn">问卷链接</span><a class="url" href="https://tally.so/r/44R8Rd" target="_blank" rel="noopener">https://tally.so/r/44R8Rd</a></div>
+<div class="cl"><span class="cn">8月21–22 免费公开课报名</span><a class="url" href="https://tally.so/r/Y5XZj5" target="_blank" rel="noopener">https://tally.so/r/Y5XZj5</a></div>
+</div><p class="shot">截图保存你的分布</p><button class="restart" id="again">重新做一遍</button></section><footer class="foot">IMPACT Leadership Accelerator · 公开体验区<br><span class="muted2">— 你随时可以回来。 You can always come back. —</span><div class="declare">这里是 IMPACT 学习门户的公开体验区 · 完整门户（12 个主题 + IMPACTor AI 教练）为学员专属<span class="en">This is the open preview of the IMPACT Learning Portal. The full portal is reserved for participants.</span></div><div class="ip">© 2025–2026 LifeMaster · Sherry Zhang｜版权所有 · All rights reserved<br>IMPACT™、IMPACTor™ 及本站所含框架、模型与练习，均为 LifeMaster 专有知识产权；未经书面许可，请勿复制、改编或用于商业用途。<br><span class="en">The IMPACT™ &amp; IMPACTor™ frameworks, models, and exercises herein are proprietary to LifeMaster — no reproduction, adaptation, or commercial use without written permission.</span><br><span class="site">LifeMaster.coach</span></div></footer></div><script>
+(function(){
+var Q=["让我用三句话讲清自己的强项和短板，我不需要想很久", "会上被人当众质疑，我能稳住，不急着自证", "Review 拿到低于预期的评价，我第一反应是弄清原因，不是怀疑自己", "我不在场的会议上，会有人替我说话", "重要决定公布之前，我通常已经听到风声", "就算明天升职通道关闭，我仍说得出每天来上班的理由", "要推动一件需要别的部门配合的事，我知道该先找谁", "一件事悬而未决拖上一个月，我不会因此乱了阵脚", "我说得出老板的老板最在意什么", "我现在做的事，和五年后想成为的人，是连着的", "把我放到高一级的位置，我知道自己哪里会接不住", "我说得出今年正在补哪个具体短板"];
+var D=[{"zh": "自己", "en": "Self", "q": [1, 2], "desc": "你对自身状态与反应的清晰度。—— 你看自己的那面镜子，清到什么程度。"}, {"zh": "他人", "en": "Others", "q": [4, 7], "desc": "你在他人关系网络里的位置与分量。—— 谁会替你说话，你又找得到谁。"}, {"zh": "系统", "en": "System", "q": [5, 9], "desc": "你对组织运转与信息流向的感知。—— 消息到你这里之前，先经过了哪里。"}, {"zh": "心智", "en": "Mindset", "q": [3, 8], "desc": "你面对评价与不确定时的稳定度。—— 事情悬着的时候，你还在不在。"}, {"zh": "意义", "en": "Meaning", "q": [6, 10], "desc": "你与所做之事之间的连接强度。—— 抽掉外部的奖惩后，还剩下什么。"}, {"zh": "技能", "en": "Skills", "q": [11, 12], "desc": "你对自身能力边界的清晰度。—— 哪里够用了，哪里还差着。"}];
+var ans=new Array(12), i=0;
+
+function show(id){
+  var s=document.querySelectorAll('.screen');
+  for(var k=0;k<s.length;k++){s[k].className='screen';}
+  document.getElementById(id).className='screen on';
+  window.scrollTo(0,0);
+}
+function paint(){
+  document.getElementById('qn').textContent=(i+1)+' / 12';
+  document.getElementById('qt').textContent=Q[i];
+  document.getElementById('pbar').style.width=(i/12*100)+'%';
+  document.getElementById('qback').style.visibility=(i===0?'hidden':'visible');
+  var b=document.querySelectorAll('.sbtn');
+  for(var k=0;k<b.length;k++){b[k].className='sbtn';}
+  window.scrollTo(0,0);
+}
+document.getElementById('go').onclick=function(){i=0;show('s-q');paint();};
+document.getElementById('qback').onclick=function(){if(i>0){i--;paint();}};
+document.getElementById('again').onclick=function(){
+  ans=new Array(12);i=0;show('s-intro');
+};
+
+var btns=document.querySelectorAll('.sbtn');
+for(var k=0;k<btns.length;k++){
+  (function(b){
+    b.onclick=function(){
+      ans[i]=parseInt(b.getAttribute('data-v'),10);
+      b.className='sbtn tap';
+      setTimeout(function(){
+        if(i<11){i++;paint();}
+        else{document.getElementById('pbar').style.width='100%';result();}
+      },170);
+    };
+  })(btns[k]);
+}
+
+function result(){
+  var rows=[],min=99;
+  for(var d=0;d<D.length;d++){
+    var s=0;
+    for(var j=0;j<D[d].q.length;j++){ s+=(ans[D[d].q[j]-1]||1); }
+    rows.push({d:D[d],s:s});
+    if(s<min){min=s;}
+  }
+  // highlight the lowest 1-2 dimensions
+  var order=rows.slice().sort(function(a,b){return a.s-b.s;});
+  var low=[order[0]];
+  if(order[1] && order[1].s-order[0].s<=1){ low.push(order[1]); }
+  var lowset={};
+  for(var L=0;L<low.length;L++){ lowset[low[L].d.zh]=1; }
+
+  var h='';
+  for(var r=0;r<rows.length;r++){
+    var o=rows[r], isLow=lowset[o.d.zh]?' low':'';
+    var pct=Math.round((o.s-2)/8*92)+8;
+    h+='<div class="dimrow'+isLow+'">'
+      +'<div class="dimhead"><div class="dimname">'+o.d.zh
+      +'<span class="en">'+o.d.en+'</span></div>'
+      +'<div class="dimscore">'+o.s+' / 10</div></div>'
+      +'<div class="track"><i style="width:'+pct+'%"></i></div>'
+      +'<p class="dimdesc">'+o.d.desc+'</p></div>';
+  }
+  document.getElementById('bars').innerHTML=h;
+  var names=[];
+  for(var n=0;n<low.length;n++){ names.push('「'+low[n].d.zh+'」'); }
+  document.getElementById('lowdims').textContent = (low.length>1)
+    ? names.join('与')+'是你现在最低的两个维度。'
+    : names[0]+'是你现在最低的维度。';
+  show('s-r');
+}
+})();
+</script></body></html>
