@@ -93,6 +93,13 @@ body.backpad .wrap{padding-top:64px}
 .slab{display:flex;gap:8px;margin-top:9px}
 .slab span{flex:1;text-align:center;font-size:11.5px;line-height:1.4;color:var(--muted)}
 .qback{display:inline-block;margin-top:26px;font-size:13.5px;color:var(--muted);background:none;border:none;padding:6px 0;font-family:inherit;cursor:pointer}
+/* first screen holds title + radar + the two gold lines; bars start below the fold.
+   svh wins where supported so mobile browser chrome is accounted for. */
+.rfirst{display:flex;flex-direction:column;min-height:calc(100vh - 132px);min-height:calc(100svh - 132px)}
+.rfirst #radar{margin-top:auto}
+.rfirst .more{margin-top:auto;text-align:center;color:var(--green);opacity:.45;font-size:22px;line-height:1;padding:16px 0 4px}
+.radar{display:block;width:78vw;max-width:400px;height:auto;margin:10px auto 4px}
+.barshead{font-size:14px;color:var(--muted);margin:30px 0 0}
 .dimrow{margin:16px 0;padding:13px 15px;border:1px solid transparent;border-radius:14px}
 .dimrow.low{background:rgba(176,137,75,.09);border-color:rgba(176,137,75,.34)}
 .dimhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
@@ -109,7 +116,7 @@ body.backpad .wrap{padding-top:64px}
 .shot{font-size:13px;color:var(--muted);text-align:center;margin:22px 0 0;font-style:italic}
 @media(min-width:640px){.shot{display:none}}   /* screenshot nudge is phone-only */
 .restart{display:block;margin:26px auto 0;background:none;border:1px solid rgba(73,126,107,.3);border-radius:24px;padding:10px 22px;font-family:inherit;font-size:13.5px;color:var(--green-deep);cursor:pointer}
-</style></head><body class="backpad"><a href="../" style="position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:rgba(250,248,243,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(74,90,64,.28);color:#3a5a40;font:600 14px/1 -apple-system,'Noto Sans SC',system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 10px rgba(60,70,50,.12)">← 返回体验区</a><div class="wrap"><header class="top"><span class="wm">IMPACT</span><span class="wm-sub">Open Preview · 公开体验区</span></header><section class="screen on" id="s-intro"><div class="eyebrow">Open Preview · 2 min</div><h1 class="ttl">领导力发力点自测<span class="ttl-en">Twelve Sentences</span></h1><p class="lead">十二句话，照一照现在的自己</p><p class="muted" style="margin-top:2px">不用想太久，第一反应最准</p><div class="jin">十二句话，每句打一个分。做完你会看到六个维度的分布。<br><span class="muted2">Twelve sentences, one score each. No account, no storage — everything stays in this page.</span></div><p class="muted" style="font-size:13.5px">全程在本页计算，不需要登录，也不会保存你的任何答案。</p><button class="btn" id="go">开始 →</button></section><section class="screen" id="s-q"><div class="qwrap"><div class="prog"><i id="pbar"></i></div><div class="qn" id="qn"></div><div class="qtext" id="qt"></div><div class="scale"><button class="sbtn" data-v="1">1</button><button class="sbtn" data-v="2">2</button><button class="sbtn" data-v="3">3</button><button class="sbtn" data-v="4">4</button><button class="sbtn" data-v="5">5</button></div><div class="slab"><span>完全不像我</span><span></span><span></span><span></span><span>就是我</span></div><button class="qback" id="qback">← 上一题</button></div></section><section class="screen" id="s-r"><div class="eyebrow">Your Distribution</div><h1 class="ttl">你的六个维度<span class="ttl-en">Six Dimensions</span></h1><p class="muted" style="font-size:14.5px">每个维度 2–10 分。分数不是评判，只是一张分布图。</p><div id="bars"></div><p class="caveat">这份自测是一面基于日常场景的镜子，帮你看见自己把精力花在了哪里——它不是心理测量学意义上的标准化评估，没有常模，也不用于任何诊断。分数没有好坏，只有方向。</p><div class="lowline"><span class="ld" id="lowdims"></span>你的力气，可能一直没用在这里。怎么解？两条路——</div><div class="cta">
+</style></head><body class="backpad"><a href="../" style="position:fixed;top:14px;left:14px;z-index:99999;display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:rgba(250,248,243,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(74,90,64,.28);color:#3a5a40;font:600 14px/1 -apple-system,'Noto Sans SC',system-ui,sans-serif;text-decoration:none;box-shadow:0 2px 10px rgba(60,70,50,.12)">← 返回体验区</a><div class="wrap"><header class="top"><span class="wm">IMPACT</span><span class="wm-sub">Open Preview · 公开体验区</span></header><section class="screen on" id="s-intro"><div class="eyebrow">Open Preview · 2 min</div><h1 class="ttl">领导力发力点自测<span class="ttl-en">Twelve Sentences</span></h1><p class="lead">十二句话，照一照现在的自己</p><p class="muted" style="margin-top:2px">不用想太久，第一反应最准</p><div class="jin">十二句话，每句打一个分。做完你会看到六个维度的分布。<br><span class="muted2">Twelve sentences, one score each. No account, no storage — everything stays in this page.</span></div><p class="muted" style="font-size:13.5px">全程在本页计算，不需要登录，也不会保存你的任何答案。</p><button class="btn" id="go">开始 →</button></section><section class="screen" id="s-q"><div class="qwrap"><div class="prog"><i id="pbar"></i></div><div class="qn" id="qn"></div><div class="qtext" id="qt"></div><div class="scale"><button class="sbtn" data-v="1">1</button><button class="sbtn" data-v="2">2</button><button class="sbtn" data-v="3">3</button><button class="sbtn" data-v="4">4</button><button class="sbtn" data-v="5">5</button></div><div class="slab"><span>完全不像我</span><span></span><span></span><span></span><span>就是我</span></div><button class="qback" id="qback">← 上一题</button></div></section><section class="screen" id="s-r"><div class="rfirst"><div class="eyebrow">Your Distribution</div><h1 class="ttl">你的六个维度<span class="ttl-en">Six Dimensions</span></h1><div id="radar"></div><div class="lowline"><span class="ld" id="lowdims"></span>你的力气，可能一直没用在这里。往下看——</div><div class="more">↓</div></div><p class="barshead">每个维度 2–10 分，从低到高排列。分数不是评判，只是一张分布图。</p><div id="bars"></div><p class="caveat">这份自测是一面基于日常场景的镜子，帮你看见自己把精力花在了哪里——它不是心理测量学意义上的标准化评估，没有常模，也不用于任何诊断。分数没有好坏，只有方向。</p><div class="cta">
 <div class="ct">想看完整的 12 个主题？</div>
 <p class="cd">填一份 5 分钟问卷，解锁完整学习门户 + 60 分钟一对一深度访谈资格。</p>
 <div class="cl"><span class="cn">问卷链接</span><a class="url" href="https://tally.so/r/44R8Rd" target="_blank" rel="noopener">https://tally.so/r/44R8Rd</a></div>
@@ -155,6 +162,51 @@ for(var k=0;k<btns.length;k++){
   })(btns[k]);
 }
 
+// Six-axis radar, drawn by hand as SVG. Rings sit at 2/4/6/8/10, so a
+// score of 2 lands on the innermost ring rather than collapsing to the
+// centre. No interpretation here -- that all lives in the bars below.
+function radar(rows, lowset){
+  var cx=160, cy=150, R=92, N=6;
+  function ang(i){ return (-90+i*60)*Math.PI/180; }
+  function pt(i,rad){ return [cx+rad*Math.cos(ang(i)), cy+rad*Math.sin(ang(i))]; }
+  function poly(rad){
+    var p=[];
+    for(var i=0;i<N;i++){ var q=pt(i,rad); p.push(q[0].toFixed(1)+','+q[1].toFixed(1)); }
+    return p.join(' ');
+  }
+  var g='';
+  for(var k=1;k<=5;k++){
+    g+='<polygon points="'+poly(R*k/5)+'" fill="none" stroke="rgba(73,126,107,'
+      +(k===5?'.34':'.17')+')" stroke-width="1"/>';
+  }
+  for(var i=0;i<N;i++){
+    var e=pt(i,R);
+    g+='<line x1="'+cx+'" y1="'+cy+'" x2="'+e[0].toFixed(1)+'" y2="'+e[1].toFixed(1)
+      +'" stroke="rgba(73,126,107,.17)" stroke-width="1"/>';
+  }
+  var dp=[], dots='';
+  for(i=0;i<N;i++){
+    var q=pt(i, R*rows[i].s/10);
+    dp.push(q[0].toFixed(1)+','+q[1].toFixed(1));
+    var isLow=lowset[rows[i].d.zh];
+    dots+='<circle cx="'+q[0].toFixed(1)+'" cy="'+q[1].toFixed(1)+'" r="'
+      +(isLow?'5':'3')+'" fill="'+(isLow?'#B0894B':'#4f7a63')+'"/>';
+  }
+  g+='<polygon points="'+dp.join(' ')+'" fill="rgba(79,122,99,.4)" stroke="#4f7a63"'
+    +' stroke-width="1.8" stroke-linejoin="round"/>'+dots;
+  var anchor=['middle','start','start','middle','end','end'];
+  var dx=[0,8,8,0,-8,-8], dy=[-10,2,13,20,13,2];
+  for(i=0;i<N;i++){
+    var L=pt(i,R+14);
+    g+='<text x="'+(L[0]+dx[i]).toFixed(1)+'" y="'+(L[1]+dy[i]).toFixed(1)
+      +'" text-anchor="'+anchor[i]+'" font-size="16" font-weight="600"'
+      +' fill="'+(lowset[rows[i].d.zh]?'#8a6a34':'#2f4a3c')+'"'
+      +' font-family="Noto Serif SC, serif">'+rows[i].d.zh+'</text>';
+  }
+  return '<svg class="radar" viewBox="0 0 320 300" role="img" '
+    +'aria-label="六个维度的分布雷达图">'+g+'</svg>';
+}
+
 function result(){
   var rows=[],min=99;
   for(var d=0;d<D.length;d++){
@@ -170,9 +222,10 @@ function result(){
   var lowset={};
   for(var L=0;L<low.length;L++){ lowset[low[L].d.zh]=1; }
 
+  // the radar keeps the fixed hexagon order; the cards run lowest score first
   var h='';
-  for(var r=0;r<rows.length;r++){
-    var o=rows[r], isLow=lowset[o.d.zh]?' low':'';
+  for(var r=0;r<order.length;r++){
+    var o=order[r], isLow=lowset[o.d.zh]?' low':'';
     var pct=Math.round((o.s-2)/8*92)+8;
     h+='<div class="dimrow'+isLow+'">'
       +'<div class="dimhead"><div class="dimname">'+o.d.zh
@@ -181,6 +234,7 @@ function result(){
       +'<div class="track"><i style="width:'+pct+'%"></i></div>'
       +'<p class="dimdesc">'+o.d.desc+'</p></div>';
   }
+  document.getElementById('radar').innerHTML=radar(rows,lowset);
   document.getElementById('bars').innerHTML=h;
   var names=[];
   for(var n=0;n<low.length;n++){ names.push('「'+low[n].d.zh+'」'); }
