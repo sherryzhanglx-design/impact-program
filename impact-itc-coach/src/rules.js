@@ -35,7 +35,7 @@ export const PHASE_FIELDS = {
 };
 
 export const FIELD_LABELS = {
-  goal: '第一栏 改变目标',
+  goal: '第一栏 我的领导力发展需要突破的一个挑战',
   goalWhy: '为什么对我重要',
   importance: '重要度（1–5）',
   behavior: '第二栏 行为（做 / 没做）',
