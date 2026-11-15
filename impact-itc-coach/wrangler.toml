@@ -1,0 +1,34 @@
+name = "impact-itc-coach"
+main = "src/index.js"
+compatibility_date = "2026-10-15"
+workers_dev = true
+
+# Non-secret settings. Secrets (ANTHROPIC_API_KEY, CLASS_CODE) are set in the
+# Cloudflare dashboard or with `wrangler secret put`, never in this file.
+[vars]
+MODEL = "claude-sonnet-5-5"
+EFFORT = "low"
+MAX_TOKENS = "2000"
+DAILY_LIMIT = "1500"
+# After this moment the coach answers "expired" and calls no model.
+EXPIRES_AT = "2026-12-01T00:00:00+08:00"
+ALLOWED_ORIGINS = "https://sherryzhanglx-design.github.io,http://localhost:8000,http://127.0.0.1:8000"
+
+# 30 requests per IP per minute (a classroom on one Wi-Fi shares one IP).
+[[ratelimits]]
+name = "RATE_LIMITER"
+namespace_id = "2111"
+simple = { limit = 30, period = 60 }
+
+# Daily total cap counter.
+[[durable_objects.bindings]]
+name = "DAILY"
+class_name = "DailyCounter"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["DailyCounter"]
+
+# Do not persist request bodies anywhere; logs carry status codes only.
+[observability]
+enabled = false
